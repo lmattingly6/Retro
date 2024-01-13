@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
     margin: 0;
     padding: 0;
-    background-color: antiquewhite;
+
 }
 #about-us{
     text-align: left;
@@ -23,6 +23,7 @@ body{
 .header{
     height:300px;
     overflow:hidden;
+
 }
 .header h1 {
     font-family: "Lucida Handwriting", cursive;
@@ -32,7 +33,6 @@ body{
     left:40% ;
     top:25%;
     transform: translate(-50%, -50%);
-    color:antiquewhite;
     font-size: 70px;
 
     
@@ -46,13 +46,12 @@ body{
 
 }
 .nav{
-    background-color: antiquewhite;
     display: flex;
     position:sticky;
     top:0;
     z-index:100;
     justify-content: flex-end;
-
+    background: white;
 }
 .nav ul {
     list-style: none;
@@ -105,10 +104,11 @@ body{
     text-align: left;
 }
 .aside {
-    background:#4A4238;
-    color: antiquewhite;
+
     min-height: 300px;
     height:auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
 }
 
 .social-links{
@@ -131,7 +131,7 @@ body{
   }
   
   ::-webkit-scrollbar-track {
-    background-color: antiquewhite;
+    background-color:white;
     /* color of the track */
   }
   
@@ -140,7 +140,7 @@ body{
     /* color of the thumb */
     border-radius: 6px;
     /* roundness of the thumb */
-    border: 3px solid antiquewhite;
+
     /* border around the thumb */
   }
   
