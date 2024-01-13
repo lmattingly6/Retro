@@ -1,0 +1,187 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+#about-us{
+    text-align: left;
+}
+#span {
+    font-weight: bolder;
+}
+#span2 {
+    font-weight: bolder;
+    font-size: 20px;
+}
+#aside-edits{
+    text-align: left;
+    padding: 0 6px;
+}
+
+
+.header{
+    height:300px;
+    overflow:hidden;
+}
+.header h1 {
+    font-family: "Lucida Handwriting", cursive;
+    margin:auto;
+    position: absolute;
+    top: 25%; /* Adjust this value to vertically center the h1 */
+    left:40% ;
+    top:25%;
+    transform: translate(-50%, -50%);
+    color:antiquewhite;
+    font-size: 70px;
+
+    
+}
+
+.header img{
+    border-radius: 6px;
+    position:relative;
+    height:auto;
+    width: 100%;
+
+}
+.nav{
+    background-color: antiquewhite;
+    display: flex;
+    position:sticky;
+    top:0;
+    z-index:100;
+    justify-content: flex-end;
+
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.nav a:hover {
+    color:#79C99E;
+}
+.nav li{
+   
+    margin: 0 20px 0 10px;
+    padding: 12px;
+}
+.nav li a{
+    text-decoration: none;
+    color:black;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.wrapper{
+    display:flex;
+    flex-flow: row wrap;
+    text-align: center;
+}
+.wrapper > * {
+    padding: 10px;
+    margin:2px;
+     flex: 1 100%;
+     border-radius:10px;
+ 
+ 
+    }
+.footer{
+
+    height:80px;
+}
+.main{
+
+    min-height: 300px;
+    padding:40px ;
+    font-size: 20px;
+    text-align: center;
+    height: auto;
+}
+.main h1{
+    font-size: 40px;
+    text-align: left;
+}
+.aside {
+    background:#4A4238;
+    color: antiquewhite;
+    min-height: 300px;
+    height:auto;
+}
+
+.social-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+.social-links img {
+    width: 60px;
+    height: 60px;
+    padding: 30px;;
+
+}
+/* Define scrollbar styles */
+::-webkit-scrollbar {
+    width: 12px;
+    /* width of the scrollbar */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: antiquewhite;
+    /* color of the track */
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color:black;
+    /* color of the thumb */
+    border-radius: 6px;
+    /* roundness of the thumb */
+    border: 3px solid antiquewhite;
+    /* border around the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(142, 121, 121, 0.486);
+    /* color of the thumb on hover */
+  }
+  
+@media all and (min-width: 800px) {
+    .main{
+        flex:2;
+    }
+    .aside{
+        order: 2;
+    }
+    .main{
+        order: 1;
+    }
+    .footer{
+        order: 4;
+    }
+}
+
+@media all and (min-width: 600px) {
+    .aside {
+        flex: 1;
+    }
+    .header h1 {
+     text-align: center;
+}
+}
+@media(min-width:1375px) {
+
+    
+    .header h1 {
+        top: 26%; /* Adjust this value to vertically center the h1 */
+        font-size: 100px;
+
+}
+.main p{
+    padding: 0 60px;
+}
+}
+
